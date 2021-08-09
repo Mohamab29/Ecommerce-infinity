@@ -10,9 +10,8 @@ server.use(express.json());
 mongoose.connect(
     process.env.DB_CONNECTION,
     { useNewUrlParser: true, useUnifiedTopology: true },
-    () => {
-        console.log("connected to db")
-    });
+    () => console.log("connected to db")
+);
 server.use('/api/products', productsController);
 server.listen(3001, () => console.log("Listening on port 3001 ..."));
 

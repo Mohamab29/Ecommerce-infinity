@@ -1,0 +1,13 @@
+.Layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.Layout header{
+    height: 7vh;
+}
+.Layout main{
+    height: 93vh ;
+    flex:auto;
+    overflow: auto;
+}
